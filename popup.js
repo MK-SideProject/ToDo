@@ -1,7 +1,6 @@
 const toDoForm = document.querySelector('.input');
 let items = document.querySelector('.list');
 let itemPlus = document.getElementById('.todo_add');
-let deleteBtns = document.querySelector('.delete');
 let reset = document.querySelector('.reset')
 const toDoInput = toDoForm.querySelector("input");
 
@@ -9,11 +8,12 @@ const toDoInput = toDoForm.querySelector("input");
 document.querySelector('ul').addEventListener('click',checkToDo);
 reset.addEventListener('click', resetToDo);
 toDoForm.addEventListener("submit", handleSubmit);
-loadToDos();
+
 
 
 const TODOS_Ls = "toDos";
 let toDos = [];
+loadToDos();
 
 function add (text){
 
@@ -27,6 +27,7 @@ function add (text){
     checkTag.classList.add('item--check');
 
     const span = document.createElement('span'); // span 태그생성
+    span.style.margin = 10+"px";
     const newId = toDos.length + 1;
 
     let removeTag = document.createElement('button');
@@ -36,7 +37,6 @@ function add (text){
     removeTag.appendChild(x);
     itemElement.appendChild(checkTag);
     itemElement.appendChild(span);
-    //itemElement.appendChild(textTag);
     itemElement.appendChild(removeTag);
     itemElement.id= newId;
     items.appendChild(itemElement);
@@ -47,13 +47,11 @@ function add (text){
         text,
         id: newId
     };
+
     
     toDos.push(toDoObj);
     saveToDos()
-    
 
-    
-    console.log(toDos);
    
     }
 
@@ -71,15 +69,8 @@ function saveToDos(){
     localStorage.setItem(TODOS_Ls, JSON.stringify(toDos));
 }
 
-deleteBtns.addEventListener('click', e=>{
 
-        var checkboxs = document.querySelectorAll('.item--check:checked');
-        var checkTo = checkboxs.forEach(item => item.parentElement.remove());
-        toDos = checkTo;
-        saveToDos();
-           
-    
-});
+
 
 function deleteToDo(e){
     const btn = e.target;
@@ -93,8 +84,8 @@ function deleteToDo(e){
 }
 
 function resetToDo(e){
-    let ul = document.querySelector('.list').innerHTML = '';
-    toDos = ul;
+    items.innerHTML='';
+    toDos = [];
     saveToDos();
 
 }
