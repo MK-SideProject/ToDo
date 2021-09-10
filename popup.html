@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="title">TODO LIST</h1>
+            <form class="input">
+                    <input type="text" id="input">
+                    <button type="button" id="button">입력</button>
+            </form>
+        </div>
+        <ul class="list"></ul>
+        <div class="dropup">
+            <div class="menu">
+                <button class="dropbtn" type="submit" style="background: transparent">
+                    <img src="./btns/menu.png" alt="submit" />
+                </button>
+            </div>
+            <div class="dropup-content">
+                <button class="delete" type="submit" style="background: transparent">
+                    <img src="./btns/delete.png" alt="submit" />
+                </button>
+                <button class="reset" type="submit" style="background: transparent">
+                    <img src="./btns/delete_all.png" alt="submit" />
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="popup.js"></script>
+</html>

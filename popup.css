@@ -1,0 +1,155 @@
+*{
+    box-sizing: content-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: radial-gradient(ellipse at top, #ffde7d, transparent),
+    radial-gradient(ellipse at bottom, #ccf6c8, transparent); */
+    margin: 50px auto;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    font-size : 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 90%;
+    min-height: 800px;
+    min-width: 600px;
+    border-radius: 30px;
+    background-color: white;
+}
+.title{
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 40px;
+}
+
+.list{
+    padding: 0px;
+    flex-basis: 80%;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+    margin-left: 82%;
+    align-items: center;
+    justify-content: center;
+}
+.dropup button{
+    width: 25%;
+    height: 10%;
+    border-radius: 50%;
+}
+.dropup-content button{
+    width: 20%;
+    height: 5%;
+}
+
+button{
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+}
+
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dropbtn {
+    color: black;
+    margin: 10px 10px 30px 15px;
+}
+
+.item {
+    display: block;
+    margin : 20px 0;
+}
+.item--check {
+    transform: scale(1.5);
+    margin-right: 5px;
+}
+.item--title {
+    font-size : 20px;
+    margin : 0 10px;
+    border: none;
+}
+.list--remove {
+    visibility: hidden;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+.item:hover > .list--remove{
+    visibility: visible;
+}
+.item--title:focus ~ .list--remove{
+    visibility: visible;
+}
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+/* Links inside the dropup */
+.dropup-content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content button:hover {background-color: #ddd}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+    background-color: rgba(255, 255, 232, 0.815);
+}
+
+.input{
+    display: flex;
+    margin: 90px;
+    /*justify-content: center;
+    align-items: center; */
+}
+#input{
+    width: 280px;
+    height: 20px;
+    border: 2px solid #1b1b1b;
+    color: #1b1b1b;
+    font: inherit;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+#button{
+    background-color: #f9f9f9;
+    width: 20%;
+}
