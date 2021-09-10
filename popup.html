@@ -13,20 +13,14 @@
             <h1 class="title">TODO LIST</h1>
             <form class="input">
                     <input type="text" id="input">
-                    <button type="submit" id="todo_add">입력</button>
+                    <button type="submit" id="todo_add" style="background: transparent">
+                        <img src="./btns/add.png" alt="submit">
+                    </button>
             </form>
+            <ul class="list"></ul>
         </div>
-        <ul class="list"></ul>
-        <div class="dropup">
-            <div class="menu">
-                <button class="dropbtn" type="submit" style="background: transparent">
-                    <img src="./btns/menu.png" alt="submit" />
-                </button>
-            </div>
-            <div class="dropup-content">
-                <button class="delete" type="submit" style="background: transparent">
-                    <img src="./btns/delete.png" alt="submit" />
-                </button>
+        <div>
+            <div id="reset">
                 <button class="reset" type="submit" style="background: transparent">
                     <img src="./btns/delete_all.png" alt="submit" />
                 </button>

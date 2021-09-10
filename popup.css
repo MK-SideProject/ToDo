@@ -41,43 +41,36 @@ ul {
     padding: 0px;
     flex-basis: 80%;
 }
-
-.dropup {
-    position: relative;
-    display: inline-block;
-    margin-left: 82%;
-    align-items: center;
-    justify-content: center;
-}
-.dropup button{
-    width: 25%;
-    height: 10%;
-    border-radius: 50%;
-}
-.dropup-content button{
-    width: 20%;
-    height: 5%;
-}
-
 button{
     cursor: pointer;
-    margin: 10px;
-    padding: 5px;
+    margin: 8px;
 }
 
+.reset{
+    border: none;
+}
+
+.reset img{
+    height: 50px;
+    height: 50px;
+}
+
+.input img{
+    width: 25px;
+    height: 25px;
+}
+.menu img{
+    height: 30px;
+    width: 30px;
+}
 img{
     display: inline-block;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-}
-
-.dropbtn {
-    color: black;
-    margin: 10px 10px 30px 15px;
+    object-fit: fill;
 }
 
 .item {
+    text-align: center;
     display: block;
     margin : 20px 0;
 }
@@ -102,36 +95,6 @@ img{
 .item--title:focus ~ .list--remove{
     visibility: visible;
 }
-/* Dropup content (Hidden by Default) */
-.dropup-content {
-    display: none;
-    position: absolute;
-    bottom: 80px;
-    z-index: 1;
-    margin-left: 10px;
-}
-
-/* Links inside the dropup */
-.dropup-content button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    display: block;
-}
-
-/* Change color of dropup links on hover */
-.dropup-content button:hover {background-color: #ddd}
-
-/* Show the dropup menu on hover */
-.dropup:hover .dropup-content {
-    display: block;
-}
-
-/* Change the background color of the dropup button when the dropup content is shown */
-.dropup:hover .dropbtn {
-    background-color: rgba(255, 255, 232, 0.815);
-}
 
 .input{
     display: flex;
@@ -141,15 +104,15 @@ img{
 }
 #input{
     width: 280px;
-    height: 20px;
+    height: 26px;
     border: 2px solid #1b1b1b;
     color: #1b1b1b;
     font: inherit;
     text-align: center;
-    margin: 10px 0px;
+    margin: 8px 0px;
     padding: 5px;
 }
 #button{
     background-color: #f9f9f9;
-    width: 20%;
+    width: 23px;
 }
