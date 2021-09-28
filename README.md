@@ -10,8 +10,9 @@
 
 ## Project! 실행
 
-![todo1](https://user-images.githubusercontent.com/77378559/132939803-0ed3f2ad-982d-4dea-ab23-309c2cd8a768.png)
-![todo2](https://user-images.githubusercontent.com/77378559/132939806-77a9c3c1-714e-4db8-adc5-1f52e474dfdc.png)
+투두리스트 실행 과정
+
+![todo_list](https://user-images.githubusercontent.com/77378559/135045214-8c2ba7ef-3304-44ae-bc8c-c5e4b62c15af.gif)
 
 
 ## 이용 방법
